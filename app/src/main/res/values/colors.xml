@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorprimary">#00b0cb</color>
+    <color name="colorsecondry">#42A5F5</color>
+    <color name="chip_color_not_selected">#BEBEBE</color>
+    <color name="chip_text_color_notselected">#252C63</color>
+    <color name="colorprimarylight">#418AFA</color>
+    <color name="color_background_separate">#369EBFDA</color>
+    <color name="color_red_otptimer">#FF7043</color>
+    <color name="errorcolor">#D32F2F</color>
+    <color name="color_button_disabled">#929BAA</color>
+    <color name="finger_printbtn_disable_color">#EFEFEF</color>
+
+    <color name="transwhite">#70FFFFFF</color>
+    <color name="colorOnPrimary">#263a95</color>
+
+
+    <color name="colorSecondary">#f89a25</color>
+    <color name="colorOnSecondary">#f3fafb</color>
+
+    <color name="colorThemeBackground">#FFFFFF</color>
+
+    <color name="color_radiobutton_border">#5E6C84</color>
+    <color name="colortext_top_products_heading">#151F4C</color>
+    <color name="colortext_top_products_subheading">#716C6B</color>
+    <color name="color_subtitle_arrow">#252C63</color>
+
+    <color name="color_edittext_border">#666B80</color>
+    <color name="color_homepage_text">#242B63</color>
+
+    <color name="colorbackgroundicons">#f2f3ff</color>
+    <color name="color_edittext_color">#172B4D</color>
+    <color name="color_otp_item_selected">#052576</color>
+    <color name="hint_color_editext">#716C6B</color>
+    <color name="age_calculate_backcolor">#EDEEFF</color>
+    <color name="colortext_top_subheading">#252C63</color>
+
+    <color name="button_disable_color">#EFEFEF</color>
+
+    <color name="customize_line_color">#05257626</color>
+    <color name="color_buyinsurance_headingcolor">#716C6B</color>
+    <color name="color_password_missmatch">#F12424</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="gray_white_light">#fafafa</color>
+
+    <color name="colorDarkGray">#808080</color>
+    <color name="background_top_customize">#F1F2FF</color>
+    <color name="otp_editcolor">#CECFDB</color>
+</resources>

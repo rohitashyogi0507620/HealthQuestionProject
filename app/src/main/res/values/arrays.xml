@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="currentStatus">
+        <item>Current Status *</item>
+        <item>Cured</item>
+        <item>Not treated</item>
+        <item>Ongoing</item>
+    </string-array>
+
+  <string-array name="LineOfManagement">
+        <item>Line Of Management *</item>
+        <item>Medical Management </item>
+        <item>Surgical Management</item>
+    </string-array>
+
+</resources>

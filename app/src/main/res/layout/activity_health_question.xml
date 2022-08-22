@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageview_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:layout_marginBottom="@dimen/margin_15dp"
+            android:src="@drawable/ic_go_backarrow"></ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnemailquotes"
+                style="@style/buttonStyleOutline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/margin_toolbariocns"
+                android:layout_marginTop="@dimen/margin_toolbariocns"
+                android:layout_marginEnd="@dimen/margin_toolbariocns"
+                android:layout_marginBottom="@dimen/margin_toolbariocns"
+                android:padding="@dimen/margin_5dp"
+                android:text="@string/email_quotes"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_email_icon"></com.google.android.material.button.MaterialButton>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/margin_toolbariocns"
+                android:layout_marginTop="@dimen/margin_toolbariocns"
+                android:layout_marginEnd="@dimen/margin_toolbariocns"
+                android:layout_marginBottom="@dimen/margin_toolbariocns"
+                android:padding="@dimen/margin_5dp"
+                android:src="@drawable/ic_refereshicon"></ImageView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:indeterminateOnly="false" />
+
+    <LinearLayout
+        android:id="@+id/select_product_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressbar"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/textStyleSubHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:text="Health Questions" />
+
+
+        <View
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_toolbar_icons"
+            android:backgroundTint="@color/color_subtitle_arrow"></View>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/select_product_heading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/padding_10dp"
+                app:cardElevation="@dimen/margin_5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_15dp">
+
+                    <TextView
+                        android:id="@+id/health_Questionnumber"
+                        style="@style/textStyleSubHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_10dp"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:text="1."></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/health_Questiontitle"
+                                    style="@style/textStyleSubHeading"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/padding_10dp"
+                                    android:text="This is Health Question"></TextView>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <Switch
+                                        android:id="@+id/health_switchyesno"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="@dimen/padding_10dp"
+                                        android:paddingBottom="@dimen/padding_10dp"
+                                        android:switchMinWidth="@dimen/margin_5dp" />
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/health_inputlayout"
+                                        style="@style/EditTextStyleOutline"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin_20dp"
+                                        android:visibility="gone">
+
+                                        <EditText
+                                            android:id="@+id/health_editext"
+                                            style="@style/EditTextStyleQuestion"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="Enter" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclearview_subQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_10dp"
+                    android:visibility="visible"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/layout_healthquestion"></androidx.recyclerview.widget.RecyclerView>
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:layout_width="match_parent"
+                    android:id="@+id/progessbarsubquestion"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                   ></com.google.android.material.progressindicator.CircularProgressIndicator>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/bottomlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_previousQuestion"
+                    style="@style/ButtonPrimaryStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginBottom="@dimen/margin_20dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="Previous"
+                    android:visibility="visible"></Button>
+
+                <Button
+                    android:id="@+id/btn_nextQuestion"
+                    style="@style/ButtonPrimaryStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginBottom="@dimen/margin_20dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="Next"
+                    android:visibility="visible"></Button>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

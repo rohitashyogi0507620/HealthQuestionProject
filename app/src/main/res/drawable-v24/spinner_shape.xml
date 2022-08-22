@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background Color -->
+    <corners android:radius="@dimen/bnt_8dp_padding" />
+    <!-- Border Color -->
+    <stroke
+        android:width="@dimen/border_1dp"
+        android:color="@color/color_border_line_edittext" />
+
+
+</shape>

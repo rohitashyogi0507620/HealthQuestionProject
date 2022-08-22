@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/padding_10dp"
+        app:cardElevation="@dimen/margin_5dp"
+        app:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_15dp">
+
+                    <TextView
+                        android:id="@+id/health_Questionnumber"
+                        style="@style/textStyleSubHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_10dp"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:text="1.1"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/health_Questiontitle"
+                                style="@style/textStyleSubHeading"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_10dp"
+                                android:text="This is Sub Question"></TextView>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/health_inputlayout"
+                                    style="@style/EditTextStyleOutline"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_20dp"
+                                    android:visibility="gone">
+
+                                    <EditText
+                                        android:id="@+id/health_editext"
+                                        style="@style/EditTextStyleQuestion"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <RadioGroup
+                                    android:id="@+id/health_radiogroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/padding_10dp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <RadioButton
+                                        android:id="@+id/health_radiobuttonyes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text=" Yes " />
+
+                                    <RadioButton
+                                        android:id="@+id/health_radiobuttonno"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/padding_10dp"
+                                        android:gravity="center"
+                                        android:text=" No " />
+                                </RadioGroup>
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout_subquestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_20dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/health_subQuestiontitle"
+                                style="@style/textStyleSubHeading"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="This is sub Health Question"></TextView>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/health_subinputlayout"
+                                style="@style/EditTextStyleOutline"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_10dp"
+                                android:visibility="visible">
+
+                                <EditText
+                                    android:id="@+id/health_subeditext"
+                                    style="@style/EditTextStyleQuestion"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Enter" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <Spinner
+                            android:id="@+id/health_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="@dimen/padding_10dp"
+                            android:background="@drawable/spinner_shape"
+                            android:entries="@array/currentStatus"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclearview_subtosubquestion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_10dp"
+                                android:visibility="gone"
+                                tools:itemCount="1"
+                                tools:listitem="@layout/layout_healthsubquestion">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+                            <com.google.android.material.progressindicator.CircularProgressIndicator
+                                android:id="@+id/progessbar_subquestion_chlid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:indeterminate="true"
+                                android:visibility="gone"></com.google.android.material.progressindicator.CircularProgressIndicator>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

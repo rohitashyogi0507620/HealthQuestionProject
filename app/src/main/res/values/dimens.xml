@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_toolbariocns">8dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+
+    <dimen name="editext_txt_size">16sp</dimen>
+    <dimen name="bnt_8dp_padding">8dp</dimen>
+    <dimen name="headingrecent_section_textsixe">14sp</dimen>
+    <dimen name="card_padding">10dp</dimen>
+    <dimen name="line_width">35dp</dimen>
+    <dimen name="line_height">2dp</dimen>
+    <dimen name="corner_toolbar_icons">10dp</dimen>
+    <dimen name="border_2dp">2sp</dimen>
+    <dimen name="signup_continue_txt_size">14sp</dimen>
+    <dimen name="button_padding">12dp</dimen>
+    <dimen name="chip_text_size">12sp</dimen>
+    <dimen name="customize_line_height">2dp</dimen>
+    <dimen name="signup_term_txt_size">10sp</dimen>
+    <dimen name="_50sdp">50dp</dimen>
+    <dimen name="_25sdp">25dp</dimen>
+    <dimen name="_7sdp">7dp</dimen>
+    <dimen name="d80">80dp</dimen>
+    <dimen name="d25">25dp</dimen>
+    <dimen name="d3">3dp</dimen>
+    <dimen name="item_margin">5dp</dimen>
+    <dimen name="d12">12dp</dimen>
+
+    <dimen name="txt_size_filter">16sp</dimen>
+    <dimen name="margin_layout">10dp</dimen>
+    <dimen name="bottom_sheetcorner">30dp</dimen>
+    <dimen name="bottom_sheet_minimizer_size">40dp</dimen>
+    <dimen name="button_corner">8dp</dimen>
+    <dimen name="margin_25dp">25dp</dimen>
+    <dimen name="bottomsheet_bottomamrgin35dp">35dp</dimen>
+    <dimen name="sub_heading_text_size">14dp</dimen>
+    <dimen name="txt_planFilter_textsize">11dp</dimen>
+    <dimen name="_4sdp">4sp</dimen>
+    <dimen name="_10ssp">10sp</dimen>
+    <dimen name="_11ssp">11sp</dimen>
+    <dimen name="txtsize_planlistsize">18sp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+</resources>
